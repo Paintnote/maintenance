@@ -1,22 +1,110 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Paintnote | Site Maintenance</title>
-<style>
-  body { text-align: center; padding: 150px; }
-  h1 { font-size: 50px; }
-  body { font: 20px Helvetica, sans-serif; color: #333; }
-  article { display: block; text-align: left; width: 650px; margin: 0 auto; }
-  a { color: #dc8100; text-decoration: none; }
-  a:hover { color: #333; text-decoration: none; }
-</style>
+    <title>システムメンテナンス</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        body {
+            background-color: #e4f4ff;
+            color: #2E2F30;
+            text-align: center;
+            font-family: arial, sans-serif;
+            margin: 0;
+            padding: 0 0.2vw;
+        }
+
+        * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .p-Errors {
+            position: relative;
+            height: 100vh;
+        }
+
+        .p-Errors .p-Errors__position {
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .p-Errors__position {
+            width: 100%;
+            text-align: center;
+            padding: 0px 15px;
+            line-height: 1.4;
+        }
+
+        .p-Errors__position .p-Errors__text-area {
+            margin: 70px 0 5px;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #767676;
+            line-height: 30px;
+        }
+
+        .p-Errors__position h2 {
+            font-size: 36px;
+            font-weight: 800;
+            color: #222;
+            width: 100%;
+        }
+
+        .p-Errors__img {
+            max-width: 420px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .p-Errors__position a {
+            display: inline-block;
+            font-weight: 700;
+            text-decoration: underline;
+            color: #767676;
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .p-Errors__position h2 {
+                font-size: 20px;
+            }
+
+            .p-Errors__position .p-Errors__text-area {
+                margin: 40px 0 5px;
+                font-size: 1.1rem;
+                line-height: 22px;
+            }
+
+            .p-Errors__position a {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media only screen and (max-width: 339px) {
+
+            .p-Errors__position .p-Errors__text-area {
+                font-size: 1rem;
+                line-height: 24px;
+            }
+
+            .p-Errors__position a {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <article>
-    <h1>現在、システムメンテナンスを行っております。</h1>
-    <div>
+<div class="p-Errors">
+  <div class="p-Errors__position">
+    <img src="https://github.com/Paintnote/error/blob/master/logo.png?raw=true" alt="ロゴ" class="p-Errors__img">
+    <h2>現在、システムメンテナンスを行っております</h2>
+    <div class='p-Errors__text-area'>
       <p>日頃よりPaintnoteをご利用いただき、誠にありがとうございます。</p>
       <p>現在システムメンテナンスを行っております。</p>
       <p>ご不便をお掛けいたしますが、ご理解いただきますようお願い申し上げます。</p>
@@ -25,10 +113,8 @@
       <p>（延長される可能性がありますが、ご容赦くださいますようお願い申し上げます。）</p>
       <hr>
       <p style="text-align:center;">2021年1月17日18：00～20：00</p>
-      <hr>
-      <br>
-      <p>お問い合わせにつきましては、<a href="mailto:paintnote-team@paintnote.co.jp">こちら</a>にてお待ちしております。</p>
     </div>
-  </article>
+  </div>
+</div>
 </body>
 </html>
